@@ -1,0 +1,89 @@
+section{
+    width: 500px;
+    font-size: 150%;
+    background-color: blueviolet;
+}
+
+p{
+    padding: 1rem;
+    background-color: blue;
+    width: 100px;
+    font-size: 3rem;
+}
+
+.title{
+    width: 10%;
+    padding: 2em;
+}
+
+/* 
+
+Declared value (p > .title)
+(author declarations)
+100px 10%
+
+Cascaded Value (bcz in this cae class is most specified than element)
+(after resolving conflicts)
+10%
+
+Specified Value
+(default value, if no cascaded value)
+10%
+
+Computed Value
+(converting relative to absolute)
+10%
+
+Used Value
+(final calculation)
+10% 0f parent 500px = 50.23px
+
+Actual Value
+(browser and device restrictions)
+50px
+
+*/
+/* ------------------------------------------------------------------------------------------------------- */
+/* E.g.2 - If we not used padding */ 
+/*  
+Declared value (p > .title)
+(author declarations)
+    -
+Cascaded Value (bcz in this cae class is most specified than element)
+(after resolving conflicts)
+    - 
+
+Specified Value
+(default value, if no cascaded value)
+    0px
+
+Computed Value
+(converting relative to absolute)
+    0px
+
+Used Value
+(final calculation)
+    0px
+Actual Value
+(browser and device restrictions)
+    0px
+
+*/
+/* ------------------------------------------------------------------------------------------------------- */
+/*
+
+fonts - x%  -: x% * parent's computed value of font-size
+
+lengths - x% -: x% * parent's computed value of width
+
+
+em - xem  font-size -: x *  parents computed font-size
+
+em - xem width -: x * current elements font-size 
+
+
+rem - xrem -: x * root elements computed font size
+
+
+
+*/
