@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacking context(z-index)</title>
+    <link rel="stylesheet" href="/Css/CSS_basics-I/stacking.css">
+</head>
+<body>
+
+  <header>
+    This is the page header
+  </header>
+  <!-- To fix this we have to put this in same stacking index/in the same tree.
+   <div class="toast">
+    a short toast!
+  </div> -->
+    <main>
+        <p>Main content</p>
+        <div class="toast">
+          a short toast!
+        </div>
+        <button>Click me</button>
+      </main>
+    
+</body>
+</html>

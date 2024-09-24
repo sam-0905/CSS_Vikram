@@ -1,0 +1,47 @@
+header {
+    height: 60px;
+    line-height: 60px;
+    background-color: lightseagreen;
+    text-align: center;
+    /* margin-bottom: 2rem; */
+  }
+  
+  main {
+    padding: 32px;
+  }
+  
+  .toast {
+    top: -12px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    width: 490px;
+    text-align: center;
+    padding: 8px;
+    background: #3c3c3c;
+    color: white;
+    box-shadow: 1px 2px 8px hsla(0deg, 0%, 0%, 0.25);
+    border-radius: 6px;
+  }
+  
+  header {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /*here even if a toast has higher z-index it is placed below the header bcz,Toast relative parent is main & it is alo placed inside the main.It is also not inside the main body.
+  
+  Header has a stacking context and main has it own stacking context.
+  */ 
+  
+  .toast {
+    position: absolute;
+    z-index: 99999;
+  }
+  
+  main {
+    position: relative;
+    z-index: 1; /*to fix toast we can cmd this */
+    background-color: lightsteelblue;
+  }
+  
