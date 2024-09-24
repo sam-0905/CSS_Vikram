@@ -1,0 +1,21 @@
+body{
+    background-color: lime;
+}
+.box {
+    margin: 40px;
+    background-color:darkslateblue;
+    color: white;
+    padding: 24px 30px;
+    width: 150px;
+  }
+
+  .box:nth-child(2) {
+    /* display: inline-block; */
+    /* flex-direction: row; */
+    width: 200px;
+  }
+  
+  .box:nth-child(4){
+    display: inline;
+
+  }
