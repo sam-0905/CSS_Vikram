@@ -1,0 +1,36 @@
+body{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    /* width: 200px; */
+
+}
+
+.card{
+    position: relative;
+    width: 200px;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.toast{
+    /* position: fixed; */
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: darkcyan;
+    color: aquamarine;
+    cursor: pointer;
+
+}
+
+.link{
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+}
