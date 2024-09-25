@@ -19,13 +19,22 @@ body{
 }
 
 .toast{
-    /* position: fixed; */
+    position: fixed;
+    top: 80%;
+    left: 0;
+    /* z-index: 2; */
+}
+
+.toast{
     border: 1px solid black;
     margin: 1rem;
+    margin-left: 2rem;
     padding: 1rem;
     background-color: darkcyan;
     color: aquamarine;
     cursor: pointer;
+    width: 500px;
+    text-align: center;
 
 }
 
