@@ -1,0 +1,55 @@
+/* Here we see in the container are parent's css terminology */
+.container {
+    background-color: cornflowerblue;
+    height: 400px;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap; 
+  
+    /* align-content: end; */
+    /* align-content: safe + end ;  read about it */
+
+    /* if we apply it will be center of the whole box */
+    justify-content: center;
+    align-items: center; 
+  
+    /* gap: 10px; */
+    /* column-gap: 20px; */
+    gap: 10px;
+    /* row-gap: 30px; */
+
+
+    /* short hand property */
+    flex-flow: column wrap;
+
+  }
+
+/* Here we see in the child are children css terminology */
+  .child {
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    background-color: blueviolet;
+    height: 40px;
+    border: 2px solid;
+    order: 1;
+    /* margin: 1rem; */
+  }
+  
+  .child:nth-child(1) {
+    /* height: 100px; */
+    order: 3;
+  }
+  
+  .child:nth-child(4) {
+    /* height: 100px; */
+    background-color: red;
+    order: 2;
+    /* flex-grow: 1; */
+  }
+  
+  /* 
+  The flex-shrink sets the shrink factor of a flex item. 
+  If the size of all flex items is larger than the wrapper, items will shrink according to the flex-shrink factor. */
+  
+
