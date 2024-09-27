@@ -30,16 +30,22 @@ body {
   
   .child:nth-child(3) {
     background-color: lightblue; /* width: 122px*/
-    /* flex-shrink: 1; */
+    flex-shrink: 1;
   
-    flex-basis: 40%;
+    flex-basis: 40%;  /*It takes the percentage width of the available space.  */
   }
   
   /*  
-
+  
   flex grow doesn't make items equal in width
   
   ((grow value/total grow value) * available space) + original width
   
+  flex-grow = 1
+  (1/1 * 223 (82+63+122 = 267- 500 = 233) +82 )  => final value is 233+82 = 315 width will apply
+
+  flex-grow = 2
+  (1/1 * 223 (82+63+122 = 267- 500 = 233) +82 )  
+
   */
   
