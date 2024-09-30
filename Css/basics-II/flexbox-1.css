@@ -11,10 +11,14 @@ body{
     font-weight: bolder;
     padding: 1rem;
     cursor: pointer;
+    /* align-items: center; */
+    /* using wrap in header component help to resisze responsive.  */
+    /* flex-wrap: wrap; */
 }
 
 
 .list{
+        /* margin-left: auto;  will automatically adjust acc to space*/
         display: flex;
         text-decoration: none;
         list-style: none;
