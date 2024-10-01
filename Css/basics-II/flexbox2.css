@@ -1,0 +1,69 @@
+body{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.section{
+    display: flex;
+}
+.aside{
+    width: 10%;
+    padding: 5rem;
+    margin: 1rem;
+    height: 20vh;
+    border: 1px solid black;
+    background-color: cyan;
+    color: darkgreen;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.main{
+    width: 80%;
+    padding: 5rem;
+    margin: 1rem;
+    height: 20vh;
+    border: 1px solid black;
+    background-color: cyan;
+    color: darkgreen;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+}
+
+
+/* vikram css */
+aside,
+main {
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  height: 350px;
+  padding: 1rem;
+  background-color: darksalmon;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 950px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 1rem auto;
+}
+
+aside {
+  flex-basis: 250px;
+  margin-right: 24px;
+  margin-bottom: 1rem;
+}
+
+main {
+    /* important */
+  flex-grow: 1;
+}
