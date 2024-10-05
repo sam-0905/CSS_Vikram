@@ -1,0 +1,46 @@
+body{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 1rem;
+  }
+
+.container{
+    display: grid;
+    height: 100vh;
+    gap: 20px;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "aside main"
+    "footer footer"
+    ;
+}
+  
+header {
+    background-color: blue;
+    grid-area: header;
+  }
+  
+aside {
+    background-color: hotpink;
+    grid-area: aside;
+  }
+  
+main {
+    background-color:chartreuse;
+    grid-area: main;
+  }
+footer {
+    background-color: orange;
+    grid-area: footer;
+  }
+
+
